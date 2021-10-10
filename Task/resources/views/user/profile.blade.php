@@ -18,11 +18,10 @@
                 <div class="col-lg-3">
                     <div id="dbimage">
                     @if(isset($user->profile))
-                        <img src="{{ public_path()."/profile/".$user->profile}}" alt="{{ $user->profile }}"   id="img" style="border-radius: 10px;" height="200" width="200">
+                        <img src="{{ asset('profile/'.$user->profile) }}" alt="{{ $user->profile }}"   id="img" style="border-radius: 10px;" height="200" width="200">
                     @else
-                        <img src="{{ public_path()."/profile/".$user->profile}}" id="img" height="200" width="200" style="border-radius: 10px;">
+                        <img src="{{ asset('profile/'.$user->profile) }}" id="img" height="200" width="200" style="border-radius: 10px;">
                     @endif
-                        <img src="{{ public_path()."/profile/".$user->profile }}" height="200" width="200">
                      </div>
                     <span id="uploaded_image"></span>
                 </div>
