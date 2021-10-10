@@ -12,7 +12,7 @@
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-                <form action="{{url('profile/'.$user->id)}}" method="post" enctype="multipart/form-data">
+                <form action="{{url('editprofile/'.$user->id)}}" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{csrf_token() }}">
 
                 <div class="col-lg-3">
